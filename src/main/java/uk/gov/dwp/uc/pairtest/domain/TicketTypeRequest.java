@@ -1,13 +1,15 @@
 package uk.gov.dwp.uc.pairtest.domain;
 
+import uk.gov.dwp.uc.pairtest.enums.Type;
+
 /**
  * Immutable Object
  */
 
-public class TicketTypeRequest {
+public final class TicketTypeRequest {
 
-    private int noOfTickets;
-    private Type type;
+    private final int noOfTickets;
+    private final Type type;
 
     public TicketTypeRequest(Type type, int noOfTickets) {
         this.type = type;
@@ -21,9 +23,4 @@ public class TicketTypeRequest {
     public Type getTicketType() {
         return type;
     }
-
-    public enum Type {
-        ADULT, CHILD , INFANT
-    }
-
 }
