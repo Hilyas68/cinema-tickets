@@ -86,8 +86,8 @@ public class TicketServiceImpl implements TicketService {
          * the number of infants is not more than the number of Adults
          * **/
 
-        if (numberOfInfants > numberOfAdults)
-            throw new InvalidPurchaseException("Number of Infant tickets can not be more than Adult tickets");
+//        if (numberOfInfants > numberOfAdults)
+//            throw new InvalidPurchaseException("Number of Infant tickets can not be more than Adult tickets");
     }
 
     private int calculateTotalAmount(final TicketTypeRequest... ticketTypeRequests) {
